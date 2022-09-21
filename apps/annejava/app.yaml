@@ -1,0 +1,17 @@
+
+app: annejava
+containerArgs: ' '
+cpuLimit: 500m
+cpuRequest: 300m
+environment: dev
+image: ghcr.io/cse-labs/annejava:latest
+ingressPrefix: /
+livenessProbe: /healthz
+memoryLimit: 512Mi
+memoryRequest: 512Mi
+namespace: annejava
+nodePort: 30088
+port: 8080
+readinessProbe: /readyz
+targets: []
+template: pib-service
