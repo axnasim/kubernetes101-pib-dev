@@ -46,6 +46,8 @@ GitHub Codespaces is also available in beta on a limited basis for GitHub Pro us
 
 ## Create a Codespace
 
+> You can use the same Codespace for any of the labs
+
 - From this repo
   - Click the `<> Code` button
     - Make sure the Codespaces tab is active
@@ -54,7 +56,8 @@ GitHub Codespaces is also available in beta on a limited basis for GitHub Pro us
 
 ## Create a working branch
 
-- Because we are sharing a repo, you need to create a working branch
+- Because the main branch has a branch protection rule, you need to create a working branch
+  - You can use the same branch for any of the labs or create a new branch per lab (add 1, 2, 3 ... to the branch name)
 
   ```bash
 
@@ -83,17 +86,22 @@ GitHub Codespaces is also available in beta on a limited basis for GitHub Pro us
 - outer-loop [Lab 1](docs/outer-loop.md)
 - Multi-cluster outer-loop [Lab 2](docs/outer-loop-multi-cluster.md)
 - Ring Based Deployment [Lab 3](docs/outer-loop-ring-deployment.md)
+
+> Work in Progress
+
 - Setting up Azure subscription and Codespaces [Lab 4](docs/azure-codespaces-setup.md)
   - This is a prerequisite for the Advanced Labs
 
 ## Advanced Labs
 
+> Work in Progress
+
 - Arc enabled Gitops [Lab](docs/outer-loop-arc-gitops.md)
 - Canary Deployment [Lab](advanced-scenarios/canary/README.md)
 - Vision on Edge (VoE) [Lab](advanced-scenarios/voe/README.md)
 - Centralized Observability [Lab](advanced-scenarios/monitoring/README.md)
-- outer-loop to Physical Devices [Lab](docs/outer-loop-physical-devices.md)
-- outer-loop to AKS [Lab](docs/outer-loop-aks-azure.md)
+- outer-loop with Physical Devices [Lab](docs/outer-loop-physical-devices.md)
+- outer-loop with AKS [Lab](docs/outer-loop-aks-azure.md)
 
 ## Cleanup
 

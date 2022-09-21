@@ -51,7 +51,7 @@ flt list
     # list your Azure accounts
     az account list -o table
 
-    # set your Azure subscrition
+    # set your Azure subscription
     az account set -s mySubNameOrId
 
     # verify your account
@@ -166,7 +166,7 @@ cd apps/imdb
 git pull
 
 # add all clusters as a target
-flt targets add all
+flt targets add region:central
 
 # other options
 # flt targets add region:central
@@ -175,6 +175,9 @@ flt targets add all
 
 # specify the cluster by name
 # flt targets add $MY_CLUSTER
+
+# deploy to all clusters
+# flt targets clear && flt targets add all
 
 # deploy the app via ci-cd and GitOps Automation
 flt targets deploy
@@ -192,7 +195,7 @@ flt targets deploy
 
 ```bash
 
-# should see myapp added
+# should see imdb added
 git pull
 
 # force flux to reconcile
@@ -236,6 +239,7 @@ flt check app imdb
   ```bash
 
   # export MY_IP
+  cd $PIB_BASE
   export MY_IP=$(cat ips | cut -f2)
 
   http http://$MY_IP/version
@@ -248,17 +252,17 @@ flt check app imdb
 
 - Once you're finished with the workshop and experimenting, delete your cluster
 
-```bash
+  ```bash
 
-# start in the root of your repo
-cd $PIB_BASE
-git pull
-flt delete $MY_CLUSTER
-rm ips
-git commit -am "deleted cluster"
-git push
+  # start in the root of your repo
+  cd $PIB_BASE
+  git pull
+  flt delete $MY_CLUSTER
+  rm ips
+  git commit -am "deleted cluster"
+  git push
 
-```
+  ```
 
 - You can recreate your cluster at any time
   - Note that to reuse the same name, you have to wait for the Azure RG to delete

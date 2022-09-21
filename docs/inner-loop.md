@@ -183,6 +183,27 @@ kic test load --duration 5 --verbose
 
 ```
 
+## `kic test` WebV Configuration
+
+- Run the `kic test` commands with --show to view the default parameters passed to the custom webv image
+
+```bash
+
+kic test integration --show
+
+# the --max-errors value should be updated
+kic test integration --max-errors 5 --show
+
+```
+
+- See the list of requests in the custom test files in the `apps/myapp/webv` directory
+
+```bash
+
+code $PIB_BASE/apps/myapp/webv/integration.json
+
+```
+
 ## Generate Requests for Observability
 
 - PiB includes a full observability stack "in" the Codespace
@@ -217,6 +238,8 @@ for i in {1..10}; kic test integration;
     - This will display the Swagger UI for MyApp in your local browser
     - NodePorts + Codespaces handles all the port forwarding automatically!
 
+> There are 5 unused Ports that are forwarded (30088, 31080, 31088, 32080, and 32088). These are set up for the advanced scenario of running multiple apps simultaneously on the local cluster.
+
 ## Observability: Grafana
 
 - Grafana is a de-facto standard for K8s dashboards
@@ -228,7 +251,7 @@ for i in {1..10}; kic test integration;
 - From the `PORTS` tab, open `Grafana (32000)`
   - Username: admin
   - Password: cse-labs
-- Click on "General / Home" at the top of the screen and select "Applicaton Dashboard"
+- Click on "General / Home" at the top of the screen and select "Application Dashboard"
 
 ## Observability: Prometheus
 
