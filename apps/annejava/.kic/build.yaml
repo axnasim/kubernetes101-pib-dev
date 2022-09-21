@@ -1,0 +1,11 @@
+###
+# build commands
+###
+
+commands:
+- name: build
+  short: Build local apps
+  scriptCommands:
+    - name: annejava
+      short: Build AnneJava
+      path: build/app
