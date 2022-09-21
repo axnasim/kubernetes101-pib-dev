@@ -1,0 +1,76 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: annejava
+  namespace: annejava
+  labels:
+    app.kubernetes.io/name: annejava
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: annejava
+  template:
+    metadata:
+      labels:
+        app: annejava
+    spec:
+      containers:
+        - name: app
+          image: k3d-registry.localhost:5500/annejava:local
+          imagePullPolicy: Always
+
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+
+          readinessProbe:
+            initialDelaySeconds: 5
+            failureThreshold: 60
+            periodSeconds: 2
+            httpGet:
+              path: /readyz
+              port: 8080
+
+          livenessProbe:
+            initialDelaySeconds: 60
+            periodSeconds: 60
+            httpGet:
+              path: /healthz
+              port: 8080
+
+          resources:
+            limits:
+              cpu: 1000m
+              memory: 512Mi
+            requests:
+              cpu: 200m
+              memory: 512Mi
+          volumeMounts:
+            - name: secrets
+              mountPath: "/app/secrets"
+      volumes:
+        - name: secrets
+          secret:
+            secretName: app-secrets
+            defaultMode: 444
+            optional: true
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: annejava
+  namespace: annejava
+spec:
+  type: NodePort
+  ports:
+    - port: 8080
+      nodePort: 30088
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app: annejava
