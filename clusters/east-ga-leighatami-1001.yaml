@@ -1,0 +1,10 @@
+name: east-ga-leighatami-1001
+environment: dev
+region: east
+zone: east-ga
+district: east-ga-leighatami
+store: east-ga-leighatami-1001
+domain: 20.14.35.41
+ingressType: Http
+gitopsRepo: kubernetes101/pib-dev
+gitopsBranch: leighatami
