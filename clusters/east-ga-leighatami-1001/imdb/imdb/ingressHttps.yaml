@@ -13,9 +13,9 @@ spec:
   tls:
   - secretName: imdb
     hosts:
-    - 20.14.34.91
+    - 20.14.35.41
   rules:
-  - host: 20.14.34.91
+  - host: 20.14.35.41
     http:
       paths:
       - pathType: Prefix
