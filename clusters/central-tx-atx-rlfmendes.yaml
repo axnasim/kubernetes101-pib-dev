@@ -1,0 +1,10 @@
+name: central-tx-atx-rlfmendes
+environment: dev
+region: central
+zone: central-tx
+district: central-tx-atx
+store: central-tx-atx-rlfmendes
+domain: central-tx-atx-rlfmendes.soldevex.com
+ingressType: Https
+gitopsRepo: kubernetes101/pib-dev
+gitopsBranch: rlfmendes
