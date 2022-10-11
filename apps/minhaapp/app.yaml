@@ -13,5 +13,5 @@ nodePort: 30080
 port: 8080
 readinessProbe: /readyz
 targets:
-    - region:west
+    - all
 template: pib-service
