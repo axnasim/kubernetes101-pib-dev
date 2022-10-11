@@ -1,0 +1,10 @@
+name: west-wa-snoq
+environment: dev
+region: west
+zone: west-wa
+district: west-wa-snoq
+store: west-wa-snoq
+domain: west-wa-snoq.soldevex.com
+ingressType: Https
+gitopsRepo: kubernetes101/pib-dev
+gitopsBranch: rlfmendes
