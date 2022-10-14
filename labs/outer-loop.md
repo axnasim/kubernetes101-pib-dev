@@ -5,7 +5,7 @@
 - As part of PiB, we have automated the creation of `dev/test clusters` using a repeatable, consistent, Infrastructure as Code approach
 - PiB ships a separate CLI (`flt`) for outer-loop dev/test clusters
 - The dev/test clusters run `k3d` in an `Azure VM`
-- `flt` connects to the dev/test VMs via SSH
+- `flt` connects to the dev/test VMs via SSHexport MY_CLUSTER=central-tx-atx-$MY_BRANCH
 - Access to the dev/test fleet can be shared between Codespaces and users
   - We have an advanced workshop under development for fleet sharing
 
