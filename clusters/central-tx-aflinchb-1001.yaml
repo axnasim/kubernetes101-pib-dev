@@ -1,0 +1,10 @@
+name: central-tx-aflinchb-1001
+environment: dev
+region: central
+zone: central-tx
+district: central-tx-aflinchb
+store: central-tx-aflinchb-1001
+domain: 20.163.65.137
+ingressType: Http
+gitopsRepo: kubernetes101/pib-dev
+gitopsBranch: aflinchb
