@@ -1,0 +1,10 @@
+name: west-wa-nagireddy51-1001
+environment: dev
+region: west
+zone: west-wa
+district: west-wa-nagireddy51
+store: west-wa-nagireddy51-1001
+domain: 20.25.176.91
+ingressType: Http
+gitopsRepo: kubernetes101/pib-dev
+gitopsBranch: nagireddy51
