@@ -46,6 +46,9 @@ cd myapp
 - Now that we've created a new application, the next logical step is to `build` the app
 - PiB encapsulates many best practices, so, as an App Dev, you don't have to figure out how to build a secure, multi-stage Dockerfile
 
+
+
+
 ```bash
 
 # build the app
