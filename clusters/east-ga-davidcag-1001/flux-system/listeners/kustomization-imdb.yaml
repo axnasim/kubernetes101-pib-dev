@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./clusters/central-tx-davidcag-1001/imdb
+  path: ./clusters/east-ga-davidcag-1001/imdb
   prune: true
   sourceRef:
     kind: GitRepository
