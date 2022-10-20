@@ -4,19 +4,12 @@ metadata:
   name: heartbeat
   namespace: heartbeat
   annotations:
-    cert-manager.io/cluster-issuer: letsencrypt-prod
-    ingress.kubernetes.io/force-ssl-redirect: "true"
     kubernetes.io/ingress.class: contour
-    kubernetes.io/tls-acme: "true"
+    ingress.kubernetes.io/force-ssl-redirect: "false"
 
 spec:
-  tls:
-  - secretName: heartbeat
-    hosts:
-    - 20.169.0.210
   rules:
-  - host: 20.169.0.210
-    http:
+  - http:
       paths:
       - pathType: Prefix
         path: /heartbeat
