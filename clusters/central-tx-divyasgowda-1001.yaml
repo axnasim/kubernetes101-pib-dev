@@ -1,0 +1,10 @@
+name: central-tx-divyasgowda-1001
+environment: dev
+region: central
+zone: central-tx
+district: central-tx-divyasgowda
+store: central-tx-divyasgowda-1001
+domain: 20.168.33.47
+ingressType: Http
+gitopsRepo: kubernetes101/pib-dev
+gitopsBranch: divya
