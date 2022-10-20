@@ -1,0 +1,10 @@
+name: central-tx-atx-fujkani
+environment: dev
+region: central
+zone: central-tx
+district: central-tx-atx
+store: central-tx-atx-fujkani
+domain: 20.125.122.126
+ingressType: Http
+gitopsRepo: kubernetes101/pib-dev
+gitopsBranch: fujkani
