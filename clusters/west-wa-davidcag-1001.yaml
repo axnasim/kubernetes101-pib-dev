@@ -1,0 +1,10 @@
+name: west-wa-davidcag-1001
+environment: dev
+region: west
+zone: west-wa
+district: west-wa-davidcag
+store: west-wa-davidcag-1001
+domain: 20.168.32.46
+ingressType: Http
+gitopsRepo: kubernetes101/pib-dev
+gitopsBranch: davidcag

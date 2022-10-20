@@ -1,0 +1,10 @@
+name: central-tx-davidcag-1001
+environment: dev
+region: central
+zone: central-tx
+district: central-tx-davidcag
+store: central-tx-davidcag-1001
+domain: 20.168.32.25
+ingressType: Http
+gitopsRepo: kubernetes101/pib-dev
+gitopsBranch: davidcag
