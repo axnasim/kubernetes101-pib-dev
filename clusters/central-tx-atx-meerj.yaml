@@ -1,0 +1,10 @@
+name: central-tx-atx-meerj
+environment: dev
+region: central
+zone: central-tx
+district: central-tx-atx
+store: central-tx-atx-meerj
+domain: 20.25.160.220
+ingressType: Http
+gitopsRepo: kubernetes101/pib-dev
+gitopsBranch: meerj
