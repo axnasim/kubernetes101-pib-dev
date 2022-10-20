@@ -4,7 +4,7 @@ region: central
 zone: central-tx
 district: central-tx-davidcag
 store: central-tx-davidcag-1001
-domain: 20.168.32.25
+domain: 20.169.0.141
 ingressType: Http
 gitopsRepo: kubernetes101/pib-dev
 gitopsBranch: davidcag

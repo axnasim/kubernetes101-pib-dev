@@ -4,7 +4,7 @@ region: west
 zone: west-wa
 district: west-wa-davidcag
 store: west-wa-davidcag-1001
-domain: 20.168.32.46
+domain: 20.169.0.210
 ingressType: Http
 gitopsRepo: kubernetes101/pib-dev
 gitopsBranch: davidcag

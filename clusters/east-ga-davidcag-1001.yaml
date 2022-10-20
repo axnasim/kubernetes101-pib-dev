@@ -1,0 +1,10 @@
+name: east-ga-davidcag-1001
+environment: dev
+region: east
+zone: east-ga
+district: east-ga-davidcag
+store: east-ga-davidcag-1001
+domain: 20.169.0.201
+ingressType: Http
+gitopsRepo: kubernetes101/pib-dev
+gitopsBranch: davidcag
