@@ -1,0 +1,10 @@
+name: west-wa-shafisullya-1001
+environment: dev
+region: west
+zone: west-wa
+district: west-wa-shafisullya
+store: west-wa-shafisullya-1001
+domain: 20.171.58.11
+ingressType: Http
+gitopsRepo: kubernetes101/pib-dev
+gitopsBranch: main

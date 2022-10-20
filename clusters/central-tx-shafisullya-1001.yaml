@@ -1,0 +1,10 @@
+name: central-tx-shafisullya-1001
+environment: dev
+region: central
+zone: central-tx
+district: central-tx-shafisullya
+store: central-tx-shafisullya-1001
+domain: 20.171.56.215
+ingressType: Http
+gitopsRepo: kubernetes101/pib-dev
+gitopsBranch: main

@@ -1,0 +1,10 @@
+name: east-ga-shafisullya-1001
+environment: dev
+region: east
+zone: east-ga
+district: east-ga-shafisullya
+store: east-ga-shafisullya-1001
+domain: 20.168.62.195
+ingressType: Http
+gitopsRepo: kubernetes101/pib-dev
+gitopsBranch: main
