@@ -7,4 +7,5 @@ nodePort: 30080
 port: 8080
 targets:
     - region:central
+    - region:west
 template: pib-service
